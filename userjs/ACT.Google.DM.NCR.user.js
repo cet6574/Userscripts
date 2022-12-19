@@ -11,8 +11,8 @@
 // @namespace          ACTCD/Userscripts
 // @supportURL         https://github.com/ACTCD/Userscripts#contact
 // @homepageURL        https://github.com/ACTCD/Userscripts
-// @updateURL          https://raw.githubusercontent.com/cet6574/Userscripts/cet6574-patch-1/userjs/ACT.Google.DM.NCR.user.js
-// @downloadURL        https://raw.githubusercontent.com/cet6574/Userscripts/cet6574-patch-1/userjs/ACT.Google.DM.NCR.user.js
+// @updateURL          https://raw.githubusercontent.com/cet6574/Userscripts/cet6574-patch-1/userjs/ACT.Google.DM.NCR.user.js#bypass=true
+// @downloadURL        https://raw.githubusercontent.com/cet6574/Userscripts/cet6574-patch-1/userjs/ACT.Google.DM.NCR.user.js#bypass=true
 // @match              *://*.google.com/*
 // @match              *://*.google.ad/*
 // @match              *://*.google.ae/*
