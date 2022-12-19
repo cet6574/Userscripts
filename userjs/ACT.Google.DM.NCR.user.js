@@ -216,13 +216,15 @@
     if (window.top !== window.self) return; // @noframes
     if (location.pathname == '/url') return;
     if (location.pathname.startsWith('/sorry/')) return;
-    const plang = navigator.language; // Preferred language // 首选语言
+    const plang = 'en'; // Preferred language // 首选语言
+    // const plang = navigator.language; // Preferred language // 首选语言
     const slang = 'en-US'; // Second language // 第二语言
     const is_zh = ['ZH', 'ZH-CN'].includes(plang.toUpperCase());
     const o_url = new URL(location);
     let url = new URL(location);
     let pfull = plang;
-    let region = 'AUTO'; // Current Region // 当前区域
+    let region = 'SG'; // Current Region // 当前区域
+    // let region = 'AUTO'; // Current Region // 当前区域
     if (plang.length == 5 && plang[2] == '-') {
         region = plang.slice(-2).toUpperCase();
         url.searchParams.set("gl", region);
@@ -291,13 +293,15 @@
     switch (ogl?.toUpperCase()) { // Region
         case r1.toUpperCase(): langbar_r_r1.className = 'act'; gl = r2; break;
         case r2.toUpperCase(): langbar_r_r2.className = 'act'; gl = r1; break;
-        case undefined: r1 == 'AUTO' ? (langbar_r_r1.className = 'act', gl = r2) : (langbar_r_r2.className = 'act', langbar_r_r2.textContent = 'AUTO', ss++); break;
+        case undefined: r1 == 'SG' ? (langbar_r_r1.className = 'act', gl = r2) : (langbar_r_r2.className = 'act', langbar_r_r2.textContent = 'AUTO', ss++); break;
+        // case undefined: r1 == 'AUTO' ? (langbar_r_r1.className = 'act', gl = r2) : (langbar_r_r2.className = 'act', langbar_r_r2.textContent = 'AUTO', ss++); break;
         default: langbar_r_r2.className = 'act'; langbar_r_r2.textContent = safe_echo(ogl); ss++;
     }
     switch (ohl?.toUpperCase()) { // Language
         case plang.toUpperCase(): langbar_l_l1.className = 'act'; hl = l2; langbar_s_t.textContent = slang.toUpperCase(); break;
         case slang.toUpperCase(): langbar_l_l2.className = 'act'; hl = l1; langbar_s_t.textContent = pfull.toUpperCase(); break;
-        case undefined: langbar_l_l2.className = 'act'; langbar_l_l2.textContent = 'AUTO'; ss++; break;
+        case undefined: langbar_l_l2.className = 'act'; langbar_l_l2.textContent = 'EN'; ss++; break;
+        // case undefined: langbar_l_l2.className = 'act'; langbar_l_l2.textContent = 'AUTO'; ss++; break;
         default: langbar_l_l2.className = 'act'; langbar_l_l2.textContent = safe_echo(ohl); ss++;
     }
     let sgl = gl, shl = hl;
