@@ -220,7 +220,7 @@
     if (location.pathname.startsWith('/sorry/')) return;
     const plang = 'en'; // Preferred language // 首选语言
     // const plang = navigator.language; // Preferred language // 首选语言
-    const slang = 'en-US'; // Second language // 第二语言
+    const slang = 'ZH-CN'; // Second language // 第二语言
     const is_zh = ['ZH', 'ZH-CN'].includes(plang.toUpperCase());
     const o_url = new URL(location);
     let url = new URL(location);
