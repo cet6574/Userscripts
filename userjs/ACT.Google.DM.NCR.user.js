@@ -11,8 +11,6 @@
 // @namespace          ACTCD/Userscripts
 // @supportURL         https://github.com/ACTCD/Userscripts#contact
 // @homepageURL        https://github.com/ACTCD/Userscripts
-// @updateURL          https://raw.githubusercontent.com/
-// @downloadURL        https://raw.githubusercontent.com/
 // @match              *://*.google.com/*
 // @match              *://*.google.ad/*
 // @match              *://*.google.ae/*
